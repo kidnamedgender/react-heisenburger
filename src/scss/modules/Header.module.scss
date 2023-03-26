@@ -1,0 +1,132 @@
+.header {
+  .wrapper {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    .content {
+      max-width: 1230px;
+      margin: 0 auto;
+      padding: 0 15px;
+      .header__row {
+        height: 140px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo__block {
+          display: flex;
+          cursor: pointer;
+          .logo {
+            max-width: 100%;
+            height: 70px;
+          }
+          .logo__title {
+            margin: auto 9px;
+            h3 {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 24px;
+              text-transform: uppercase;
+              color: black;
+            }
+            p {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 11px;
+              line-height: 13px;
+              letter-spacing: 0.105em;
+              color: #855252;
+            }
+          }
+        }
+
+        @media (max-width: 1142px) {
+          .search {
+            display: none;
+          }
+        }
+
+        @media (max-width: 530px) {
+          .logo__title {
+            display: none;
+          }
+        }
+        @media (max-width: 387px) {
+          .menu {
+            li:last-of-type {
+              display: none;
+            }
+          }
+        }
+
+        .search {
+          input {
+            opacity: 0.4;
+            min-width: 300px;
+            height: 39px;
+            margin-right: 140px;
+            border-radius: 0 15px 15px 15px;
+            padding-left: 50px;
+            border: 1px solid black;
+            font-size: 14px;
+            background-image: url('../../../public/img/burger-search-icon.png');
+            background-repeat: no-repeat;
+            background-position: 15px;
+            background-size: 21px;
+            outline: none;
+            transition: all ease-in-out 0.1s;
+            &:focus {
+              min-width: 412px;
+              opacity: 0.6;
+            }
+          }
+        }
+        .menu {
+          .image {
+            background-color: #bd7f46;
+            padding: 15px;
+            border-radius: 10px;
+            transform: rotate(45deg);
+          }
+          ul li {
+            display: inline-block;
+            margin: 0 15px;
+            cursor: pointer;
+            transition: all ease-in-out 0.1s;
+            opacity: 0.9;
+            &:hover {
+              opacity: 1;
+            }
+            img {
+              height: 25px;
+            }
+            .profile {
+              display: inline-block;
+              transform: rotate(-45deg);
+            }
+            .cart {
+              display: inline-block;
+              transform: rotate(-45deg);
+              h4 {
+                position: absolute;
+                margin-left: 20px;
+                padding: 7px 12px;
+                background-color: #8b5c30;
+                border-radius: 10px;
+                color: rgba(255, 255, 255, 0.7);
+              }
+              .total__price {
+                position: absolute;
+                width: 120px;
+                margin-left: -130px;
+                font-size: 12px;
+                text-align: center;
+                padding: 7px 12px;
+                background-color: #8b5c30;
+                border-radius: 10px;
+                color: rgba(255, 255, 255, 0.7);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

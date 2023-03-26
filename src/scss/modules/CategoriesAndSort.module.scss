@@ -1,0 +1,103 @@
+@media (max-width: 387px) {
+  .categories__sort {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .categories {
+    ul li {
+      min-width: 100%;
+    }
+  }
+}
+
+.categories__sort {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+
+  .categories {
+    ul li {
+      cursor: pointer;
+      display: inline-block;
+      width: 150px;
+      text-align: center;
+      font-size: 18px;
+      margin-right: 40px;
+      margin-bottom: 10px;
+      padding: 15px 0;
+      border-radius: 15px 10px 10px 0px;
+      background-color: #d9d9d9;
+      font-weight: 600;
+      &:hover {
+        background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #d9d9d9 71.35%);
+        transition: all ease-in-out 0.2s;
+      }
+    }
+    .active {
+      background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #d39e6c 71.35%);
+      color: rgba(0, 0, 0, 0.7);
+      &:hover {
+        background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #d39e6c 71.35%);
+      }
+    }
+  }
+
+  .sort {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    img {
+      width: 40px;
+      opacity: 0.8;
+      transition: all ease-in-out 0.05s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    p {
+      opacity: 0.8;
+      margin: 5px 0;
+      padding: 5px;
+      background-color: #8b5c30;
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: underline;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+
+    .sort__popup__active {
+      position: absolute;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 220px;
+      box-shadow: 2px 6px 7px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      ul li {
+        list-style: none;
+        background-color: #ffffff;
+        padding: 10px 20px;
+        text-transform: lowercase;
+        &:hover {
+          background-color: #ebe8e8;
+          transition: all ease-in-out 0.1s;
+        }
+      }
+      .active {
+        background-color: rgba(#d39e6c, 0.5);
+        font-weight: 600;
+        &:hover {
+          background-color: rgba(#d39e6c, 0.5);
+        }
+      }
+    }
+
+    .sort__popup__unactive {
+      display: none;
+    }
+  }
+}

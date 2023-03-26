@@ -1,0 +1,15 @@
+.wrapper {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 50px auto;
+  gap: 40px;
+  img {
+    border-radius: 20px;
+  }
+  p {
+    font-size: 21px;
+  }
+}

@@ -1,0 +1,62 @@
+@media (max-width: 392px) {
+  .top__row {
+    gap: 10px;
+    flex-direction: column;
+  }
+  .totalPrice {
+    gap: 20px;
+    h2 {
+      text-align: center;
+    }
+    flex-direction: column;
+  }
+}
+
+.top__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    transition: all ease-in-out 0.1s;
+    padding: 10px;
+    border-radius: 10px;
+    img {
+      width: 30px;
+      opacity: 0.5;
+    }
+    &:hover {
+      background-color: #ebe8e8;
+    }
+  }
+}
+
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h2 {
+    font-weight: 700;
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 20px;
+    margin: 20px 0;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+    span {
+      font-size: 24px;
+      background-color: #bd7f46;
+      padding: 15px;
+      margin: 0 5px;
+      color: white;
+      border-radius: 15px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+  }
+}

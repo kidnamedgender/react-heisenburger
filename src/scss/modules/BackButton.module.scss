@@ -1,0 +1,26 @@
+.image__back {
+  cursor: pointer;
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bd7f46;
+  padding: 15px;
+  border-radius: 10px;
+  // transform: rotate(45deg);
+  margin-bottom: 50px;
+  margin-left: 50px;
+  opacity: 0.9;
+  transition: all ease-in-out 0.1s;
+  &:hover {
+    opacity: 1;
+  }
+  img {
+    margin-right: 3px;
+    height: 25px;
+  }
+  .back {
+    display: inline-block;
+    // transform: rotate(-45deg);
+  }
+}

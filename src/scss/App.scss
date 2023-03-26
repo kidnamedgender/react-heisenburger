@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(180deg, #bd7f46 0%, rgba(131, 96, 64, 0.5) 100%) fixed;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+  max-width: 1280px;
+  background-color: white;
+  margin: 50px auto;
+  border-radius: 15px;
+  min-width: 200px;
+  @media (max-width: 387px) {
+    margin: 50px 25px;
+  }
+}
+
+.main {
+  padding: 50px 0;
+  .wrapper {
+    h1 {
+      font-weight: 600;
+      font-size: 36px;
+    }
+    .content {
+      max-width: 1072px;
+      margin: 0 auto;
+      padding: 0 15px;
+      .blocks {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 70px;
+        gap: 100px;
+      }
+    }
+  }
+}
